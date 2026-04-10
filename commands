@@ -1,0 +1,36 @@
+### GDB
+# Debug main
+gdb main
+
+### inside gdb
+# crash or hit a breakpoint
+backtrace
+
+#examine a specific function call
+frame 1
+
+#inspect variables
+info locals
+
+#inspect function arguments
+info args
+
+# return to most recent frame
+frame 0
+
+# examine frame pointer registers
+info registers ebp
+
+# read saved return address
+x/gwx $ebp+4
+
+### Objectdump
+# object dump to see assembly code with intel representation 
+objdump -d -Mintel main | less
+
+### GCC
+# compile with gcc compiler
+gcc main.c -o main
+
+# Compile with frame pointers
+gcc -fno-omit-frame-pointer -g program.c -o program
