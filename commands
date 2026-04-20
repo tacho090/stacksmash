@@ -32,5 +32,8 @@ objdump -d -Mintel main | less
 # compile with gcc compiler
 gcc main.c -o main
 
+# compile with gcc compiler with no pie
+gcc main.c -o main -m32 -no-pie -fno-pie
+
 # Compile with frame pointers
 gcc -fno-omit-frame-pointer -g program.c -o program
