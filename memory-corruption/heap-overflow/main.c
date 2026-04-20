@@ -16,7 +16,7 @@ int perimeter(struct Square *sq) {
 }
 
 void debug() {
-  puts("You win!\n")
+  puts("You win!\n");
 }
 
 int main() {
