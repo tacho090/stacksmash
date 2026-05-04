@@ -1,0 +1,5 @@
+#### Sockets ####
+
+accept() - when a socket is listening toa connection and you want the socket to return the file descriptor to the client
+
+
