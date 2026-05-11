@@ -41,3 +41,6 @@ htmlcov/
 
 # pyenv
 .python-version
+
+#ovpn
+stacksmash.ovpn
